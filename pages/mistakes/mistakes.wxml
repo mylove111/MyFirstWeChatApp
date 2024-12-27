@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="word-list">
+    <block wx:if="{{mistakeWords.length > 0}}">
+      <view class="word-item" wx:for="{{mistakeWords}}" wx:key="word">
+        <view class="word-info" bindtap="playPronunciation" data-word="{{item}}">
+          <text class="word">{{item.word}}</text>
+          <text class="phonetic">{{item.phonetic}}</text>
+          <text class="meaning">{{item.meaning}}</text>
+        </view>
+        <view class="actions">
+          <button class="btn-learned" bindtap="markAsLearned" data-index="{{index}}" data-word="{{item}}">认识</button>
+        </view>
+      </view>
+    </block>
+    <view wx:else class="empty-tip">
+      <text>还没有添加任何错误单词</text>
+    </view>
+  </view>
+</view> 

@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="word-card">
+    <view class="word">{{currentWord.word}}</view>
+    <view class="phonetic" bindtap="playPronunciation">
+      <image class="sound-icon" src="/images/sound.png" />
+      {{currentWord.phonetic}}
+    </view>
+    <view class="meaning">{{currentWord.meaning}}</view>
+    <view class="example" wx:if="{{showExample}}">{{currentWord.example}}</view>
+  </view>
+  
+  <view class="operation-buttons">
+    <button class="btn wrong" bindtap="markWrong">不认识</button>
+    <button class="btn next" bindtap="showExample">
+      {{showExample ? '下一个' : '查看例句'}}
+    </button>
+    <button class="btn right" bindtap="markRight">认识</button>
+  </view>
+
+  <view class="progress-bar">
+    <progress percent="{{progress}}" stroke-width="3" color="#3498db" />
+    <text class="progress-text">今日进度: {{progress}}%</text>
+  </view>
+
+  <view class="daily-stats">
+    <text>今日已学: {{todayLearned}} 个</text>
+    <text>待学习: {{remainingWords}} 个</text>
+  </view>
+</view> 

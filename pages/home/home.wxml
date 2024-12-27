@@ -1,0 +1,73 @@
+<view class="container">
+  <view class="header">
+    <image class="logo" src="/images/logo.png" />
+    <text class="title">小武爱英语</text>
+  </view>
+
+  <view class="daily-quote">
+    <text class="quote-title">每日一句</text>
+    <text class="quote-content">{{dailyQuote.content}}</text>
+    <text class="quote-translation">{{dailyQuote.translation}}</text>
+    <view class="quote-audio" bindtap="playQuoteAudio">
+      <image class="audio-icon" src="/images/audio.png" />
+    </view>
+  </view>
+
+  <view class="menu-grid">
+    <view class="menu-item" bindtap="navigateTo" data-page="study">
+      <image class="menu-icon" src="/images/study.png" />
+      <text class="menu-text">开始学习</text>
+      <text class="menu-desc">每日50个单词</text>
+    </view>
+
+    <view class="menu-item" bindtap="navigateTo" data-page="learned">
+      <image class="menu-icon" src="/images/learned.png" />
+      <text class="menu-text">已学单词</text>
+      <text class="menu-desc">复习已掌握</text>
+    </view>
+
+    <view class="menu-item" bindtap="navigateTo" data-page="mistakes">
+      <image class="menu-icon" src="/images/mistake.png" />
+      <text class="menu-text">错题本</text>
+      <text class="menu-desc">重点攻克</text>
+    </view>
+
+    <view class="menu-item" bindtap="navigateTo" data-page="profile">
+      <image class="menu-icon" src="/images/profile.png" />
+      <text class="menu-text">个人中心</text>
+      <text class="menu-desc">学习统计</text>
+    </view>
+  </view>
+
+  <view class="study-plan">
+    <view class="plan-header">
+      <text class="plan-title">今日学习计划</text>
+      <text class="plan-progress">{{todayLearned}}/50</text>
+    </view>
+    <progress class="progress-bar" percent="{{(todayLearned/50)*100}}" stroke-width="12" color="#3498db" />
+  </view>
+
+  <view class="study-tips">
+    <text class="tips-title">学习建议</text>
+    <view class="tips-content">
+      <text class="tip-item">• 建议每天学习50个单词</text>
+      <text class="tip-item">• 及时复习错题本的单词</text>
+      <text class="tip-item">• 坚持打卡提高学习效果</text>
+    </view>
+  </view>
+
+  <view class="daily-stats">
+    <view class="stat-item">
+      <text class="stat-num">{{todayLearned}}</text>
+      <text class="stat-label">今日已学</text>
+    </view>
+    <view class="stat-item">
+      <text class="stat-num">{{totalLearned}}</text>
+      <text class="stat-label">累计掌握</text>
+    </view>
+    <view class="stat-item">
+      <text class="stat-num">{{streak}}</text>
+      <text class="stat-label">连续打卡</text>
+    </view>
+  </view>
+</view> 

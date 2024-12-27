@@ -1,0 +1,39 @@
+{
+  "wordList": [
+    {
+      "word": "apple",
+      "phonetic": "/ˈæpl/",
+      "meaning": "苹果",
+      "example": "I eat an apple every day.",
+      "audioUrl": "https://dict.youdao.com/dictvoice?audio=apple"
+    },
+    {
+      "word": "banana",
+      "phonetic": "/bəˈnɑːnə/",
+      "meaning": "香蕉",
+      "example": "The monkey likes bananas.",
+      "audioUrl": "https://dict.youdao.com/dictvoice?audio=banana"
+    },
+    {
+      "word": "computer",
+      "phonetic": "/kəmˈpjuːtə/",
+      "meaning": "电脑",
+      "example": "I work on my computer every day.",
+      "audioUrl": "https://dict.youdao.com/dictvoice?audio=computer"
+    },
+    {
+      "word": "dictionary",
+      "phonetic": "/ˈdɪkʃənri/",
+      "meaning": "字典",
+      "example": "Look up the word in the dictionary.",
+      "audioUrl": "https://dict.youdao.com/dictvoice?audio=dictionary"
+    },
+    {
+      "word": "elephant",
+      "phonetic": "/ˈelɪfənt/",
+      "meaning": "大象",
+      "example": "The elephant is the largest land animal.",
+      "audioUrl": "https://dict.youdao.com/dictvoice?audio=elephant"
+    }
+  ]
+} 

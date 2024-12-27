@@ -1,0 +1,97 @@
+.container {
+  padding: 30rpx;
+  box-sizing: border-box;
+  background: #f6f6f6;
+  min-height: 100vh;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 30rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  margin-bottom: 30rpx;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #3498db;
+  display: block;
+}
+
+.stat-label {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.word-list {
+  background: #fff;
+  border-radius: 20rpx;
+  padding: 20rpx;
+}
+
+.word-item {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.word-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+
+.word {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-right: 20rpx;
+}
+
+.phonetic {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.meaning {
+  font-size: 28rpx;
+  color: #333;
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url('data:font/woff2;charset=utf-8;base64,d09GMgABAAAAAAO0AAsAAAAACFwAAANlAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFQGYACDHAqDaIM0ATYCJAMQCwoABCAFhGcHShtpBxHVm8PIfhzGMck6c2bkzKmLY8bh+W39vTs3M8mKYCWrnkQ0XjLBQ2IkQohQSIZGqFRCh2Tz8G/pF7oL1eNJZvJQTR5isjKVylSmJBMCk5tT+7+9M6n+/8/l9FYX8PzWdi4zxqYxNtWZQHNtg0ZtgQQskLyH8cKLuE6g3pgkcG1rexcMLYWeBeLU1NQChg5FSyHk0BWaCnOLuAOVbvqUvgBw6349/oNwGEhqBhp68HSrBVZ+Yz97kcr/p9DjCkDwORP2OjLWAYW4Vei4gAzk6yDrXHyhdaCtS/LN+Nnzs+f/X0ChzDc0JfOP1yKhC6LLQX4mRfzmEh6BEF7EEEh4kYZAxosKAkVebCDQ5Lc9IOvgDzfgHojXiJPTV6WkVAeVtNXVpKXGxtTUtPxPJo8eTV6/vv7w4cTDh+MHD0afPUvdOc1XT0/vH0wePZw8ejB58lDHXQFP7t1LPH+efPQoce/exL17o3fvxh88ELPOz8+PHzp09+54YmXv7cTSvtuxe3dH792dOHBg4v79yQcPJh89mnz8eOrp0/EHD2L37o3evTtx//7kw4cTDx5MPH48+eRJ/P79sbt3x+7cmXj4cOLRo8knT+JPn8YfPRq7fXvs7t2JBw/Gbt8eu3179MaN0evXR69dG71+fezWrbFbt8Zu3x67e3f8/v2xO3dGr18fvXFj9ObNsVu3Rm/eHLt+fezGjbEbN0avXRu5fHnk8uWRK1dGr14dvXZt7MaNkStXhi9dGr58eeTy5ZHLl0euXh25enXk2rXhixeHL14cvnRp5MqVkatXhy9cGDp/fujs2eGzZ4fPnRs+e3bw9OnBM2cGz5wZPHt26MyZoVOnBk+dGjp9evDkyYETJwZOnhw8cWLw+PHBEyeGTp0aPH584NixgWPHBo4fHzh2bODo0YFjx/qPHu0/erT/2LH+o0f7T5zoP3688/Dh9oMHOw4d6jh0qOPgwfZ9+9r27m3bt69t//62vXvb9+5t37evY9++jn37Ovbv79i/v+PAAQ==...'); /* 这里需要完整的字体文件base64编码 */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 40px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-study:before {
+  content: "\e624";
+  color: #3498db;
+}
+
+.icon-book:before {
+  content: "\e67f";
+  color: #2ecc71;
+}
+
+.icon-wrong:before {
+  content: "\e668";
+  color: #e74c3c;
+}
+
+.icon-user:before {
+  content: "\e7ae";
+  color: #9b59b6;
+} 

@@ -1,0 +1,70 @@
+/* pages/mistakes/mistakes.wxss */
+.review-btn {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  padding: 6rpx 20rpx;
+  background: #3498db;
+  color: white;
+  border-radius: 30rpx;
+  width: auto;
+  display: inline-block;
+}
+
+.container {
+  padding: 20rpx;
+}
+
+.word-list {
+  width: 100%;
+}
+
+.word-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.1);
+}
+
+.word-info {
+  flex: 1;
+}
+
+.word {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-right: 20rpx;
+}
+
+.phonetic {
+  font-size: 28rpx;
+  color: #666;
+  margin-right: 20rpx;
+}
+
+.meaning {
+  font-size: 28rpx;
+  color: #999;
+}
+
+.actions {
+  margin-left: 20rpx;
+}
+
+.btn-learned {
+  font-size: 28rpx;
+  padding: 10rpx 30rpx;
+  background: #4CAF50;
+  color: white;
+  border-radius: 30rpx;
+}
+
+.empty-tip {
+  text-align: center;
+  color: #999;
+  padding: 100rpx 0;
+}

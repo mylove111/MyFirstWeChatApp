@@ -1,0 +1,38 @@
+<!--pages/study/study.wxml-->
+<view class="container">
+  <view class="back-btn" bindtap="goBack">
+    <icon type="back" size="24" color="#333"/>
+  </view>
+
+  <view class="word-card">
+    <view class="word-content">
+      <text class="word">{{currentWord.word}}</text>
+      <text class="phonetic">[{{currentWord.phonetic}}]</text>
+      <image class="audio-icon small" src="/images/audio.png" bindtap="playPronunciation" />
+    </view>
+    <text class="meaning" wx:if="{{showMeaning}}">{{currentWord.meaning}}</text>
+    <view class="example" wx:if="{{showExample}}">
+      <text>{{currentWord.example}}</text>
+    </view>
+  </view>
+
+  <view class="operation-buttons">
+    <block wx:if="{{!showMeaning}}">
+      <button class="btn wrong" bindtap="markWrong">不认识</button>
+      <button class="btn next" bindtap="showExample">例句</button>
+      <button class="btn right" bindtap="markRight">认识</button>
+    </block>
+    <block wx:elif="{{showMeaning && !showExample}}">
+      <button class="btn wrong" bindtap="markWrong">我记错了</button>
+      <button class="btn next" bindtap="nextWord">下一个</button>
+    </block>
+    <block wx:else>
+      <button class="btn next" bindtap="nextWord">下一个</button>
+    </block>
+  </view>
+
+  <view class="progress-bar">
+    <progress percent="{{progress}}" stroke-width="3" activeColor="#3498db" backgroundColor="#ecf0f1"/>
+    <text class="progress-text">今日剩余：{{remainingWords}}个</text>
+  </view>
+</view>
